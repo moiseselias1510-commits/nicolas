@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Copa dos Mascotes</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <!-- INTRO -->
-  <section id="introScreen" class="screen active" style="background-image:url('img/Capa.jpeg'); background-size:cover; background-position:center; background-repeat:no-repeat;">
-    <img src="img/transparent.png" class="jojo-bg" alt="">
-    <img src="img/transparent1.png" class="jojo-bg1" alt="">
-    <img src="img/transparent1.png" class="jojo-bg2" alt="">
-    <img src="img/FulecoTransparente.png" class="fuleco" alt="">
+  <section
+    id="introScreen"
+    class="screen active"
+    style="background-image:url('img/Capa.jpeg'); background-size:cover; background-position:center; background-repeat:no-repeat;"
+  >
+    <img src="img/transparent.png" class="jojo-bg" alt="" />
+    <img src="img/transparent1.png" class="jojo-bg1" alt="" />
+    <img src="img/transparent1.png" class="jojo-bg2" alt="" />
+    <img src="img/FulecoTransparente.png" class="fuleco" alt="Fuleco" />
 
     <div class="intro-overlay"></div>
 
@@ -22,9 +24,9 @@
       <h1>Copa dos Mascotes</h1>
 
       <div class="menu-buttons">
-        <button id="playBtn" class="menu-btn">Jogar</button>
-        <button id="rulesBtn" class="menu-btn">Regras</button>
-        <button id="rankingBtn" class="menu-btn">Classificação</button>
+        <button id="playBtn" class="menu-btn" type="button">Jogar</button>
+        <button id="rulesBtn" class="menu-btn" type="button">Regras</button>
+        <button id="rankingBtn" class="menu-btn" type="button">Classificação</button>
       </div>
     </div>
   </section>
@@ -37,7 +39,7 @@
       <p>No modo solo, você escolhe Fácil, Médio ou Difícil e entra no ranking se vencer.</p>
       <p>No modo trio, 3 jogadores competem sem limite de tempo e vence quem encontrar mais pares.</p>
       <p>No trio, o ranking não é salvo. Ao final da partida aparece um pódio com o desempenho dos 3 jogadores.</p>
-      <button class="backBtn" data-back="intro">Voltar</button>
+      <button class="backBtn" data-back="intro" type="button">Voltar</button>
     </div>
   </section>
 
@@ -47,18 +49,18 @@
       <h2>Escolha o modo</h2>
 
       <div class="difficulty-buttons mode-buttons">
-        <button id="soloModeBtn" class="difficulty-btn mode-choice-btn">
+        <button id="soloModeBtn" class="difficulty-btn mode-choice-btn" type="button">
           <h3>Solo</h3>
-          <span>Jogue como já está no código e escolha a dificuldade.</span>
+          <span>Jogue sozinho e escolha a dificuldade.</span>
         </button>
 
-        <button id="trioModeBtn" class="difficulty-btn mode-choice-btn trio-mode-btn">
+        <button id="trioModeBtn" class="difficulty-btn mode-choice-btn trio-mode-btn" type="button">
           <h3>Trio</h3>
           <span>3 jogadores, sem tempo e com 7 pares extras.</span>
         </button>
       </div>
 
-      <button class="backBtn" data-back="intro">Voltar</button>
+      <button class="backBtn" data-back="intro" type="button">Voltar</button>
     </div>
   </section>
 
@@ -67,11 +69,11 @@
     <div class="box">
       <h2>Digite seu nome</h2>
 
-      <input type="text" id="playerName" maxlength="40" placeholder="Seu nome">
+      <input type="text" id="playerName" maxlength="40" placeholder="Seu nome" />
 
       <div class="inline-actions">
-        <button id="soloContinueBtn">Continuar</button>
-        <button class="backBtn" data-back="mode">Voltar</button>
+        <button id="soloContinueBtn" type="button">Continuar</button>
+        <button class="backBtn" data-back="mode" type="button">Voltar</button>
       </div>
     </div>
   </section>
@@ -81,13 +83,13 @@
     <div class="box trio-names-box">
       <h2>Digite os nomes dos jogadores</h2>
 
-      <input type="text" id="trioPlayer1" maxlength="40" placeholder="Jogador 1">
-      <input type="text" id="trioPlayer2" maxlength="40" placeholder="Jogador 2">
-      <input type="text" id="trioPlayer3" maxlength="40" placeholder="Jogador 3">
+      <input type="text" id="trioPlayer1" maxlength="40" placeholder="Jogador 1" />
+      <input type="text" id="trioPlayer2" maxlength="40" placeholder="Jogador 2" />
+      <input type="text" id="trioPlayer3" maxlength="40" placeholder="Jogador 3" />
 
       <div class="inline-actions">
-        <button id="trioContinueBtn">Continuar</button>
-        <button class="backBtn" data-back="mode">Voltar</button>
+        <button id="trioContinueBtn" type="button">Continuar</button>
+        <button class="backBtn" data-back="mode" type="button">Voltar</button>
       </div>
     </div>
   </section>
@@ -95,26 +97,26 @@
   <!-- DIFICULDADE SOLO -->
   <section id="difficultyScreen" class="screen">
     <div class="box">
-      <h2>Escolha o modo</h2>
+      <h2>Escolha a dificuldade</h2>
 
       <div class="difficulty-buttons">
-        <button class="difficulty-btn" data-mode="easy">
+        <button class="difficulty-btn" data-mode="easy" type="button">
           <h3>Fácil</h3>
           <span>Tempo ilimitado</span>
         </button>
 
-        <button class="difficulty-btn" data-mode="medium">
+        <button class="difficulty-btn" data-mode="medium" type="button">
           <h3>Médio</h3>
-          <span>1:00 minuto</span>
+          <span>1 minuto</span>
         </button>
 
-        <button class="difficulty-btn" data-mode="extreme">
+        <button class="difficulty-btn" data-mode="extreme" type="button">
           <h3>Difícil</h3>
           <span>30 segundos</span>
         </button>
       </div>
 
-      <button class="backBtn" data-back="solo-name">Voltar</button>
+      <button class="backBtn" data-back="solo-name" type="button">Voltar</button>
     </div>
   </section>
 
@@ -124,16 +126,16 @@
       <h2 id="rankingTitle">Classificação</h2>
 
       <div class="ranking-tabs">
-        <button class="rankTab active" data-rank="easy">Fácil</button>
-        <button class="rankTab" data-rank="medium">Médio</button>
-        <button class="rankTab" data-rank="extreme">Difícil</button>
+        <button class="rankTab active" data-rank="easy" type="button">Fácil</button>
+        <button class="rankTab" data-rank="medium" type="button">Médio</button>
+        <button class="rankTab" data-rank="extreme" type="button">Difícil</button>
       </div>
 
       <div id="rankingList"></div>
 
       <div class="ranking-buttons">
-        <button id="rankingBackBtn">Voltar</button>
-        <button id="rankingHomeBtn">Início</button>
+        <button id="rankingBackBtn" type="button">Voltar</button>
+        <button id="rankingHomeBtn" type="button">Início</button>
       </div>
     </div>
   </section>
@@ -193,9 +195,9 @@
     </header>
 
     <div class="game-controls">
-      <button id="pauseBtn">Pausar</button>
-      <button id="resetBtn">Reiniciar</button>
-      <button id="homeBtn">Início</button>
+      <button id="pauseBtn" type="button">Pausar</button>
+      <button id="resetBtn" type="button">Reiniciar</button>
+      <button id="homeBtn" type="button">Início</button>
     </div>
 
     <div id="gameBoard" class="game-board solo-board"></div>
@@ -204,7 +206,7 @@
       <div class="overlay-box">
         <h2 id="overlayTitle">Pausado</h2>
         <p id="overlayText">Clique para continuar.</p>
-        <button id="overlayBtn">Continuar</button>
+        <button id="overlayBtn" type="button">Continuar</button>
       </div>
     </div>
   </section>
@@ -228,15 +230,13 @@
       </div>
 
       <div class="gameover-buttons">
-        <button id="retryBtn">Recomeçar</button>
-        <button id="goRankingBtn">Classificação</button>
-        <button id="goHomeBtn">Início</button>
+        <button id="retryBtn" type="button">Recomeçar</button>
+        <button id="goRankingBtn" type="button">Classificação</button>
+        <button id="goHomeBtn" type="button">Início</button>
       </div>
     </div>
   </section>
 
   <script src="script.js"></script>
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
-
 </html>
